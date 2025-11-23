@@ -1,0 +1,159 @@
+.film-details-container {
+  width: 100%;
+}
+
+.film-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.back-link {
+  color: #667eea;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #5568d3;
+}
+
+.film-details-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.film-details-content {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.film-details-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #667eea;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.film-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.film-rating-large {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #667eea;
+  white-space: nowrap;
+}
+
+.film-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.info-label {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.film-description-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.film-description-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.film-description-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  white-space: pre-wrap;
+}
+
+.film-metadata {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #f0f0f0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.metadata-item {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.metadata-item strong {
+  color: #666;
+}
+
+.error-container {
+  text-align: center;
+  padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  .film-details-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .film-details-actions {
+    flex-direction: column;
+  }
+
+  .film-details-actions .btn {
+    width: 100%;
+  }
+
+  .film-title {
+    font-size: 2rem;
+  }
+
+  .film-rating-large {
+    font-size: 1.5rem;
+  }
+
+  .film-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

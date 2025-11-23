@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node.js (Frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Frontend specific
+lab2/frontend/node_modules/
+lab2/frontend/dist/
+lab2/frontend/build/
+lab2/frontend/.vite/
+
+# Backend specific
+lab1/__pycache__/
+lab1/venv/
+lab1/*.db
+lab1/*.pyc
+
+# Logs
+backend.log
+frontend.log

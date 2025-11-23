@@ -1,0 +1,68 @@
+Установка и запуск проекта Filmoteka
+
+СТРУКТУРА ПРОЕКТА:
+- lab1/ - Backend API (FastAPI)
+- lab2/frontend/ - Frontend (React)
+
+УСТАНОВКА BACKEND:
+
+1. Перейти в папку lab1:
+   cd lab1
+
+2. Создать виртуальное окружение:
+   python3 -m venv venv
+
+3. Активировать виртуальное окружение:
+   source venv/bin/activate
+   (Windows: venv\Scripts\activate)
+
+4. Установить зависимости:
+   pip install -r requirements.txt
+
+5. Инициализировать данные (опционально):
+   python init_test_data.py
+
+6. Запустить сервер:
+   uvicorn main:app --reload
+
+Backend будет доступен на http://localhost:8000
+
+УСТАНОВКА FRONTEND:
+
+1. Перейти в папку lab2/frontend:
+   cd lab2/frontend
+
+2. Установить зависимости:
+   npm install
+
+3. Запустить сервер разработки:
+   npm run dev
+
+Frontend будет доступен на http://localhost:3000
+
+БЫСТРЫЙ ЗАПУСК:
+
+Используйте скрипты для автоматического запуска:
+
+Linux/Mac:
+  ./start_backend.sh - запуск Backend
+  ./start_frontend.sh - запуск Frontend
+  ./start_all.sh - запуск всего проекта
+
+Windows:
+  start_backend.bat - запуск Backend
+  start_frontend.bat - запуск Frontend
+  start_all.bat - запуск всего проекта
+
+ТРЕБОВАНИЯ:
+
+- Python 3.8+
+- Node.js 16+
+- npm
+
+ДОСТУП:
+
+- Backend API: http://localhost:8000
+- API Документация: http://localhost:8000/docs
+- Frontend: http://localhost:3000
+
